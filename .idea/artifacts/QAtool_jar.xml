@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="QAtool:jar">
+    <output-path>C:/output</output-path>
+    <root id="archive" name="QAtool.jar">
+      <element id="module-output" name="QAtool" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/out/artifacts/JavaFXApp/JavaFXApp.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/out/artifacts/JavaFXApp/ojdbc6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/out/artifacts/JavaFXApp/ojdbc7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/out/artifacts/QAtool/ojdbc7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/out/artifacts/QAtool/JavaFXApp.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/out/artifacts/QAtool/ojdbc6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/test/QAtool/ojdbc7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/download/jexcelapi_2_6_12/jexcelapi/jxl.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

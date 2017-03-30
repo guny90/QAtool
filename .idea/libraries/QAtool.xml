@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="QAtool">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/QAtool/ojdbc7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/QAtool/JavaFXApp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/QAtool/ojdbc6.jar!/" />
+      <root url="jar://D:/test/QAtool/ojdbc7.jar!/" />
+      <root url="jar://D:/download/jexcelapi_2_6_12/jexcelapi/jxl.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

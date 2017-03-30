@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane fx:id="anchor" maxHeight="400.0" maxWidth="1254.0" minHeight="400.0" minWidth="775.0" prefHeight="400.0" prefWidth="884.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TestNumberController">
+    <children>
+        <StackPane layoutX="141.0" layoutY="5.0" prefHeight="388.0" prefWidth="738.0">
+            <children>
+                <TableView fx:id="itemTbl" editable="true" prefHeight="388.0" prefWidth="669.0">
+                    <columns>
+                        <TableColumn fx:id="itemMsisdnCol" editable="true" prefWidth="67.0" text="Number" />
+                        <TableColumn fx:id="itemIccidCol" editable="true" prefWidth="135.0" text="Sim card" />
+                        <TableColumn fx:id="itemStatusCol" editable="true" prefWidth="69.0" text="Status" />
+                        <TableColumn fx:id="itemTpCol" editable="true" prefWidth="98.0" text="TP" />
+                        <TableColumn fx:id="itemEnvCol" prefWidth="25.0" text="Env" />
+                        <TableColumn fx:id="itemSurnameCol" editable="true" prefWidth="94.0" text="Surname" />
+                        <TableColumn fx:id="itemNameCol" editable="true" prefWidth="75.0" text="Name" />
+                        <TableColumn fx:id="itemCommentCol" editable="true" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="171.0" text="Comment" />
+                    </columns>
+                </TableView>
+            </children>
+        </StackPane>
+        <TitledPane animated="false" layoutX="2.0" layoutY="3.0" prefHeight="68.0" prefWidth="133.0" text="Enter any search conditition">
+            <content>
+                <TilePane prefHeight="38.0" prefWidth="131.0">
+                    <children>
+                        <TextField fx:id="searchByField" onAction="#onEnter" prefHeight="25.0" prefWidth="118.0" promptText="search by" />
+                    </children>
+                </TilePane>
+            </content>
+         <font>
+            <Font size="9.0" />
+         </font>
+        </TitledPane>
+        <VBox layoutX="11.0" layoutY="71.0" prefHeight="46.0" prefWidth="124.0">
+            <children>
+                <CheckBox fx:id="prodCheck" mnemonicParsing="false" selected="true" text="Production" />
+                <CheckBox fx:id="testCheck" mnemonicParsing="false" selected="true" text="Testbed" />
+                <CheckBox fx:id="report" mnemonicParsing="false" selected="false" text="Create report" />
+            </children>
+        </VBox>
+      <Button layoutX="11.0" layoutY="125.0" mnemonicParsing="false" onAction="#onReset" text="Reset" />
+      <VBox layoutX="11.0" layoutY="260.0" prefHeight="46.0" prefWidth="124.0" visible="false">
+         <children>
+            <RadioButton fx:id="rbNumber" mnemonicParsing="false" onAction="#onEnter" selected="true" text="Number" />
+            <RadioButton fx:id="rbSim" mnemonicParsing="false" onAction="#onEnter" text="Sim card" />
+            <RadioButton fx:id="rbTp" mnemonicParsing="false" onAction="#onEnter" text="Tariff plan" />
+            <RadioButton fx:id="rbComment" mnemonicParsing="false" onAction="#onEnter" text="Comment" />
+         </children>
+      </VBox>
+      <Label fx:id="labelState" layoutX="15.0" layoutY="340.0" prefHeight="46.0" prefWidth="116.0" />
+    </children>
+</AnchorPane>
